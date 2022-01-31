@@ -4,20 +4,48 @@
 <head>
 </head>
 <body>
+    <fieldset><legend>Registration form</legend>
     <form action="localhost" method="post">
     
-<label>Full Name <input type="text" name="Full Name" value="" ><br>
-<label>Email     <input type="email"></label><br>
-<label>Mobile <input type="text"></label><br>
-<label>DOB<input type="date"></label><br>
+<label>Full Name &nbsp;<input type="text" name="Full Name" value="" pattern="{a,b},{A,B},{a,A},{A,b}" required><br><br>
+<label>Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" pattern="{a,b}" required></label><br><br>
+<label>Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" pattern="{0,9},[10]"></label><br><br>
+<label>DOB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date"></label><br><br>
 Gender<input type="radio" id="Gender" value="Male" name="Gender">Male
-      <input type="radio" id="Gender" value="Female" name="Gender" >Female<br>
-     <label><input type="submit" value="SUBMIT"></label>
+      <input type="radio" id="Gender" value="Female" name="Gender" >Female<br><br>
+     <label>Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" min="0" max="30"></label>
+     
+     
+      <label><option> State
+    <select>Maharashtra</select> 
+    <select>Bihar</select>   
+    </option>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+      <label><input type="submit" value="SUBMIT"></label>
      <input type="button" value="Clear"></label>
-
+    
 
 
 </form>
+</fieldset>>
 </body>
 
 </html>
